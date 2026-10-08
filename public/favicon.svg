@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Gradiente de fundo verde esmeralda premium -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Gradiente para a barra de lucro e seta -->
+    <linearGradient id="accentGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a7f3d0" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Sombra sutil para profundidade -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#022c22" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Fundo: Squircle arredondado moderno -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="116" stroke="#ffffff" stroke-opacity="0.18" stroke-width="8" fill="none" />
+
+  <!-- Grupo com elementos gráficos financeiros (calculadora + crescimento de lucro) -->
+  <g filter="url(#subtleShadow)">
+    <!-- Base da calculadora / visor minimalista no topo -->
+    <rect x="116" y="96" width="280" height="64" rx="20" fill="#022c22" fill-opacity="0.4" />
+    <!-- Traço indicador no visor (mostrando resultado positivo) -->
+    <rect x="140" y="118" width="56" height="20" rx="10" fill="#34d399" />
+    <rect x="210" y="122" width="28" height="12" rx="6" fill="#6ee7b7" fill-opacity="0.6" />
+    <circle cx="362" cy="128" r="10" fill="#34d399" />
+
+    <!-- Colunas de crescimento financeiro (CMV, Custos e LUCRO LÍQUIDO em alta) -->
+    <!-- Coluna 1 (custos base) -->
+    <rect x="116" y="270" width="60" height="146" rx="18" fill="#ffffff" fill-opacity="0.35" />
+    
+    <!-- Coluna 2 (taxas/marketplace) -->
+    <rect x="196" y="220" width="60" height="196" rx="18" fill="#ffffff" fill-opacity="0.6" />
+    
+    <!-- Coluna 3 (SEU LUCRO - destaque com cor sólida e máxima altura) -->
+    <rect x="276" y="180" width="60" height="236" rx="18" fill="url(#accentGrad)" />
+
+    <!-- Seta ascendente de alta rentabilidade (Profit Growth Arrow) -->
+    <path 
+      d="M136 240 L236 160 L320 120 L396 116 M396 116 L356 162 M396 116 L376 176" 
+      stroke="#ffffff" 
+      stroke-width="26" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+    />
+
+    <!-- Ponto de destaque no ápice do lucro -->
+    <circle cx="396" cy="116" r="18" fill="#ffffff" />
+    <circle cx="396" cy="116" r="8" fill="#059669" />
+
+    <!-- Símbolo sutil de porcentagem no canto direito -->
+    <circle cx="390" cy="270" r="14" fill="#ffffff" fill-opacity="0.85" />
+    <path d="M404 256 L366 334" stroke="#ffffff" stroke-opacity="0.85" stroke-width="10" stroke-linecap="round" />
+    <circle cx="380" cy="320" r="14" fill="#ffffff" fill-opacity="0.85" />
+  </g>
+</svg>

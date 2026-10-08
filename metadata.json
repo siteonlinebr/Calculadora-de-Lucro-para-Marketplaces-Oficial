@@ -1,0 +1,6 @@
+{
+  "name": "Calculadora de Lucro para Marketplaces",
+  "description": "Calculadora financeira gratuita e responsiva para vendedores de Mercado Livre, Shopee, Amazon e outros marketplaces descobrirem o lucro líquido real e a margem de suas vendas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
